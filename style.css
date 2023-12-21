@@ -323,7 +323,7 @@ header img {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin: auto;
+    margin: 50px;
     flex: none;
 }
 
@@ -380,6 +380,187 @@ header img {
 .extra {
     display: flex;
     justify-content: center;
+}
+
+
+/* --------------------------------------------------------Footer------------------------------------------------ */
+.footer {
+    padding-bottom: 0px;
+    z-index: 1;
+    bottom: 0;
+    justify-content: space-evenly;
+    display: flex;
+    margin-top: 100px;
+}
+
+.footer-container {
+    max-width: 100%;
+    background-color: rgb(42, 113, 164);
+    /* margin: auto; */
+    padding-top: 15px;
+    /* position: absolute; */
+    bottom: 0;
+    right: 0;
+    left: 0;
+}
+
+.footer-row {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.footer-col {
+    width: 25%;
+    padding: 0 15px;
+}
+
+.footer-col h4 {
+    font-size: 18px;
+    color: #ffff;
+    text-transform: capitalize;
+    margin-bottom: 25px;
+    font-weight: 1000;
+    position: relative;
+
+}
+
+.footer-col h4::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    background-color: #3498db;
+    height: 2px;
+    box-sizing: border-box;
+    width: 50px;
+
+}
+
+.connect_content .cont {
+    color: white;
+}
+
+.footer-col ul li:not(:last-child) {
+    margin-bottom: 10px;
+}
+
+.footer-col ul li a {
+    font-size: 16px;
+    text-transform: capitalize;
+    color: #fff;
+    text-decoration: none;
+    font-weight: 300;
+    color: #bbb;
+    display: block;
+    transition: all 0.3s ease;
+}
+
+.footer-col ul li a:hover {
+    color: #ffff;
+
+}
+
+ul {
+    list-style: none;
+}
+
+.footer-col .social-links a {
+    display: inline-block;
+    height: 40px;
+    width: 40px;
+    background-color: rgb(255, 255, 255, 0.2);
+    margin: 0 10px 10px 0;
+    text-align: center;
+    line-height: 40px;
+    border-radius: 50%;
+    color: #fff;
+    transition: all 0.5s ease;
+
+}
+
+.footer-col .social-links {
+    color: #ffffff;
+}
+
+.footer-col .social-links a:hover {
+    color: #24262b;
+    background-color: #ffffff;
+}
+
+.footer-col .social-links p {
+    color: #ffffff;
+}
+
+#home footer div.col-md-12>p a {
+    text-decoration: none;
+}
+
+#home footer ul {
+    padding-left: 0px;
+}
+
+.footer-col p {
+    color: white;
+}
+
+/* ------------------------------------------------------------ GOVT -------------------------------------------------- */
+
+.main h2 {
+    margin-left: 100px;
+}
+
+.main_img {
+    position: relative;
+}
+
+.main_img img {
+    width: 300px;
+    height: 300px;
+    border-radius: 40px;
+    margin: 90px 50px 20px 20px;
+    box-shadow: 10px 10px 10px rgb(63, 62, 62);
+}
+
+.main_content {
+    margin: 20px;
+    font-size: 1rem;
+    flex: 1;
+    color: black;
+}
+
+.govt {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    margin: 0 100px 100px 100px;
+}
+
+.main_content h1 {
+    color: #000000;
+    text-align: center;
+}
+
+.main_content button {
+    margin: 10px;
+    padding: 10px;
+    border-radius: 20px;
+    color: white;
+    background-color: #1680ac;
+    text-decoration: none;
+    border: none;
+    cursor: pointer;
+    margin-left: 300px;
+}
+
+.main_content p {
+    font-weight: 500;
+}
+
+.main_content button:hover {
+    transform: scale(1.10);
+    transition: 0.3s;
+    filter: drop-shadow(10px 10px 10px rgb(86, 83, 83));
+    background-color: #24262b;
 }
 
 /* government schemes page starts */
