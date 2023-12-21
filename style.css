@@ -381,3 +381,67 @@ header img {
     display: flex;
     justify-content: center;
 }
+
+/* government schemes page starts */
+.govern img{
+    width: 100%;
+    height:650px;
+    background-size: cover;
+}
+.sch-text{
+text-align: center;
+font-family: "intern" ;
+font-weight: 550;
+font-size: x-large;
+color: rgb(61, 61, 61);
+text-decoration: underline;
+}
+.scheme{
+    display: inline-flex;
+    border-bottom: grey solid 1px;
+    padding:4%;
+}
+.sch-img{
+    width: 25%;
+}
+.sch-img img{
+    
+        width: 250px; /* Set your desired width */
+        object-fit: cover; /* This property specifies how the content of the replaced element should be resized to fit its container */
+      background-size:cover;
+      
+}
+.scheme h2{
+    font-family: "cinzel" ;
+    font-weight: 550;
+    font-size: normal;
+    color: rgb(53, 50, 50);
+}
+.scheme button a{
+text-decoration: none;
+padding-top: 8%;
+color: white;
+
+}
+.scheme1{
+    padding-left: 8%;
+    left: 50px;
+    width: 80%;
+    
+}
+.scheme1 h2{
+    padding-bottom:2% ;
+}
+.scheme1 p{
+    font-size: large;
+   
+}
+.scheme button{
+    background-color: rgb(44, 21, 138);
+  width: 8%;
+  height: 30%;
+    border-radius: 8%;
+  
+}
+
+/* government schemes page ends */
