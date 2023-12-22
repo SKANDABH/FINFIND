@@ -612,7 +612,7 @@ ul {
 
 .sch-img img {
 
-    width: 250px;
+    width: 350px;
     /* Set your desired width */
     object-fit: cover;
     /* This property specifies how the content of the replaced element should be resized to fit its container */
@@ -717,3 +717,22 @@ df-messenger .chat-title {
     left: 30px;
     z-index: 99999;
 }
+
+/* services starts */
+.deposit p{
+    border-top: rgb(22, 19, 19) solid 1 px;
+    border-bottom: rgb(3, 2, 2) solid 1 px;
+    font-family: intern;
+    font-weight: 600;
+    font-size: x-large;
+    text-align: center;
+    padding: 2.5%;
+    color: darkblue;
+    text-decoration: underline;
+}
+.video{
+    /* background-size: cover; */
+   
+
+}
+/* services ends */
