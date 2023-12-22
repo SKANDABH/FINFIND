@@ -562,3 +562,29 @@ ul {
     filter: drop-shadow(10px 10px 10px rgb(86, 83, 83));
     background-color: #24262b;
 }
+
+.each-news{
+    text-align: left;
+margin: 0;
+padding: 0;
+float: left;
+margin-right: 20px;
+border-bottom: black solid 1px;
+}
+
+
+.fraud-card{
+width: 10%;
+display: flex;
+/* flex-wrap: wrap; */
+}
+.each-news img{
+    width: 250px;
+}
+.fraud-card img{
+    width: 20%;
+    border-radius: 20px;
+}
+.fraud-card .textContent{
+    width: 50%;
+}
