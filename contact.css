@@ -1,0 +1,139 @@
+body {
+    color: black;
+    background: rgba(79, 47, 47, 0);
+    /* Black overlay with 50% opacity */
+    /* url('https://www.thegef.org/sites/default/files/styles/banner_image/public/2021-11/topics_banner_blendedfinance.jpg?h=4e9a1ef8&itok=vO7vV59p') no-repeat center / cover; */
+    height: 100vh;
+    background-position: center;
+    background-size: cover;
+}
+
+.connect_me {
+    position: relative;
+}
+
+.connect_me::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: url('path_to_your_image.jpg') center center no-repeat;
+    background-size: cover;
+    opacity: 0.7;
+    /* 70% opacity for the image */
+}
+
+
+.connect_me h1,
+h3 {
+    text-align: center;
+    color: rgb(49, 94, 177);
+}
+
+
+.connect_me h3 {
+    margin: 30px;
+    color: black;
+}
+
+.connect {
+    width: 80%;
+    height: 60vh;
+    margin: auto;
+    padding: 30px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.connect_content {
+    width: 340px;
+    height: 300px;
+    border-radius: 20px;
+    filter: drop-shadow(3px 3px 10px rgba(46, 44, 44, 0.847));
+}
+
+.connect_content .cont {
+    margin: 20px;
+    padding: 2px;
+}
+
+.connect_message {
+    width: 400px;
+    height: 650px;
+    border-radius: 20px;
+    box-shadow: (9px 7px 10px rgba(255, 255, 255, 0.341));
+    margin: 0px 50px;
+}
+
+.leave h3 {
+    color: rgb(0, 0, 0);
+    display: flex;
+}
+
+
+.leave h3 {
+    text-align: center;
+}
+
+.name input {
+    background-color: rgba(240, 248, 255, 0);
+    border: 1px solid rgba(0, 0, 0, 0.686);
+    border-radius: 10px;
+    margin: 15px auto;
+    padding: 10px 30px 10px 30px;
+    color: rgb(0, 0, 0);
+}
+
+
+.email input {
+    background-color: rgba(240, 248, 255, 0);
+    border: 1px solid rgba(0, 0, 0, 0.686);
+    border-radius: 10px;
+    margin: 15px auto;
+    padding: 10px 30px 10px 30px;
+    color: rgb(0, 0, 0);
+}
+
+.phone input {
+    background-color: rgba(240, 248, 255, 0);
+    border: 1px solid rgba(0, 0, 0, 0.686);
+    border-radius: 10px;
+    margin: 15px auto;
+    padding: 10px 30px 10px 30px;
+    color: rgb(0, 0, 0);
+}
+
+.message textarea {
+    background-color: rgba(240, 248, 255, 0);
+    border: 1px solid rgba(0, 0, 0, 0.686);
+    border-radius: 10px;
+    margin: 15px auto;
+    padding: 10px 30px 10px 30px;
+    color: rgb(0, 0, 0);
+}
+
+.button {
+    margin: 15px 0px 0px 20px;
+    display: flex;
+}
+
+.button input {
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    padding: 10px;
+    font-size: 18px;
+    text-align: center;
+    border: none;
+    border-radius: 20px;
+}
+
+.button input:hover {
+    background-color: rgba(35, 91, 143, 0.522);
+    color: rgb(4, 3, 3);
+    transform: scale(1.1);
+    transition: .3s;
+}
