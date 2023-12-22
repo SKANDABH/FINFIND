@@ -385,7 +385,7 @@ header img {
 .service_cards {
     display: flex;
     flex-wrap: wrap;
-
+    margin-top: 200px;
 }
 
 
@@ -569,6 +569,35 @@ ul {
     background-color: #24262b;
 }
 
+.each-news {
+    text-align: left;
+    margin: 0;
+    padding: 0;
+    float: left;
+    margin-right: 20px;
+    border-bottom: black solid 1px;
+}
+
+
+.fraud-card {
+    width: 10%;
+    display: flex;
+    /* flex-wrap: wrap; */
+}
+
+.each-news img {
+    width: 250px;
+}
+
+.fraud-card img {
+    width: 20%;
+    border-radius: 20px;
+}
+
+.fraud-card .textContent {
+    width: 50%;
+}
+
 /* government schemes page starts */
 .govern img {
     width: 100%;
@@ -710,11 +739,260 @@ df-messenger .chat-title {
 }
 
 .goog-te-gadget .goog-te-combo {
-    margin: 4px;
+    /* margin: 4px;
     display: block;
     position: fixed;
     bottom: 30px;
-    left: 30px;
+    left: 30px; */
+    z-index: 99999;
+}
+
+/* --------------------------------------------------------------------------------------------------------------------------------- */
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    color: black;
+    background: rgba(40, 117, 158, 0.558);
+    /* Black overlay with 50% opacity */
+    /* url('https://www.thegef.org/sites/default/files/styles/banner_image/public/2021-11/topics_banner_blendedfinance.jpg?h=4e9a1ef8&itok=vO7vV59p') no-repeat center / cover; */
+    height: 100vh;
+    background-position: center;
+    background-size: cover;
+}
+
+.connect_me {
+    position: relative;
+}
+
+.connect_me::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: url('path_to_your_image.jpg') center center no-repeat;
+    background-size: cover;
+    opacity: 0.7;
+    /* 70% opacity for the image */
+}
+
+
+.connect_me h1,
+h3 {
+    text-align: center;
+    color: rgb(49, 94, 177);
+}
+
+
+.connect_me h3 {
+    margin: 30px;
+    color: black;
+}
+
+.connect {
+    width: 80%;
+    height: 60vh;
+    margin: auto;
+    padding: 30px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.connect_content {
+    width: 340px;
+    height: 300px;
+    border-radius: 20px;
+    filter: drop-shadow(3px 3px 10px rgba(46, 44, 44, 0.847));
+}
+
+.connect_content .cont {
+    margin: 20px;
+    padding: 2px;
+}
+
+.connect_message {
+    width: 400px;
+    height: 650px;
+    border-radius: 20px;
+    box-shadow: (9px 7px 10px rgba(255, 255, 255, 0.341));
+    margin: 0px 50px;
+}
+
+.leave h3 {
+    color: rgb(0, 0, 0);
+    display: flex;
+}
+
+
+.leave h3 {
+    text-align: center;
+}
+
+.name input {
+    background-color: rgba(240, 248, 255, 0);
+    border: 1px solid rgba(0, 0, 0, 0.686);
+    border-radius: 10px;
+    margin: 15px auto;
+    padding: 10px 30px 10px 30px;
+    color: rgb(0, 0, 0);
+}
+
+
+.email input {
+    background-color: rgba(240, 248, 255, 0);
+    border: 1px solid rgba(0, 0, 0, 0.686);
+    border-radius: 10px;
+    margin: 15px auto;
+    padding: 10px 30px 10px 30px;
+    color: rgb(0, 0, 0);
+}
+
+.phone input {
+    background-color: rgba(240, 248, 255, 0);
+    border: 1px solid rgba(0, 0, 0, 0.686);
+    border-radius: 10px;
+    margin: 15px auto;
+    padding: 10px 30px 10px 30px;
+    color: rgb(0, 0, 0);
+}
+
+.message textarea {
+    background-color: rgba(240, 248, 255, 0);
+    border: 1px solid rgba(0, 0, 0, 0.686);
+    border-radius: 10px;
+    margin: 15px auto;
+    padding: 10px 30px 10px 30px;
+    color: rgb(0, 0, 0);
+}
+
+.button {
+    margin: 15px 0px 0px 20px;
+    display: flex;
+}
+
+.button input {
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    padding: 10px;
+    font-size: 18px;
+    text-align: center;
+    border: none;
+    border-radius: 20px;
+}
+
+.button input:hover {
+    background-color: rgba(35, 91, 143, 0.522);
+    color: rgb(4, 3, 3);
+    transform: scale(1.1);
+    transition: .3s;
+}
+
+.navbar {
+    position: sticky;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 999;
+}
+
+nav {
+    position: sticky;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background-color: rgb(30, 113, 180);
+    padding: 10px;
+    height: 70px;
+    z-index: 9999;
+    top: 0;
+    left: 0;
+    right: 0;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    font-size: 19px;
+}
+
+nav ul li {
+    margin: 5px;
+    padding: 10px;
+}
+
+nav ul li:hover {
+    margin: 5px;
+    padding: 10px;
+    transition: .5s;
+    transform: scale(1.10);
+    filter: drop-shadow(10px 10px 20px white);
+}
+
+nav li a {
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+
+}
+
+nav ul li a:hover {
+    color: #343131;
+}
+
+.navbar nav img {
+    width: 90px;
+    height: 90px;
+}
+
+.navbar nav a img:hover {
+    transform: scale(1.10);
+    transition: .3s;
+    filter: drop-shadow(10px 10px 15px rgba(255, 255, 255, 0.374));
+}
+
+.button button {
+    border-radius: 20px;
+    border: 1px solid white;
+    padding: 7px;
+    cursor: pointer;
+    color: white;
+    background-color: rgb(34, 66, 74);
+}
+
+.button button:hover {
+    color: #1680ac;
+    font-weight: 400;
+    background-color: cyan;
+    transform: scale(1.10);
+    transition: .3s;
+    filter: drop-shadow(10px 10px 10px rgba(255, 255, 255, 0.31));
+    color: #fff;
+    background: rgba(115, 113, 113, 0.661);
+}
+
+.goog-logo-link {
+    display: none !important;
+}
+
+.goog-te-gadget {
+    color: transparent !important;
+}
+
+.VIpgJd-ZVi9od-l4eHX-hSRGPd {
+    display: none;
+}
+
+.goog-te-gadget .goog-te-combo {
+    /* margin: 4px;
+    display: block;
+    position: fixed;
+    bottom: 30px;
+    left: 30px; */
     z-index: 99999;
 }
 

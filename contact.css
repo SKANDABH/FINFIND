@@ -1,6 +1,11 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
 body {
     color: black;
-    background: rgba(79, 47, 47, 0);
+    background: rgba(40, 117, 158, 0.558);
     /* Black overlay with 50% opacity */
     /* url('https://www.thegef.org/sites/default/files/styles/banner_image/public/2021-11/topics_banner_blendedfinance.jpg?h=4e9a1ef8&itok=vO7vV59p') no-repeat center / cover; */
     height: 100vh;
@@ -136,4 +141,107 @@ h3 {
     color: rgb(4, 3, 3);
     transform: scale(1.1);
     transition: .3s;
+}
+
+.navbar {
+    position: sticky;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 999;
+}
+
+nav {
+    position: sticky;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background-color: rgb(30, 113, 180);
+    padding: 10px;
+    height: 70px;
+    z-index: 9999;
+    top: 0;
+    left: 0;
+    right: 0;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    font-size: 19px;
+}
+
+nav ul li {
+    margin: 5px;
+    padding: 10px;
+}
+
+nav ul li:hover {
+    margin: 5px;
+    padding: 10px;
+    transition: .5s;
+    transform: scale(1.10);
+    filter: drop-shadow(10px 10px 20px white);
+}
+
+nav li a {
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+
+}
+
+nav ul li a:hover {
+    color: #343131;
+}
+
+.navbar nav img {
+    width: 90px;
+    height: 90px;
+}
+
+.navbar nav a img:hover {
+    transform: scale(1.10);
+    transition: .3s;
+    filter: drop-shadow(10px 10px 15px rgba(255, 255, 255, 0.374));
+}
+
+.button button {
+    border-radius: 20px;
+    border: 1px solid white;
+    padding: 7px;
+    cursor: pointer;
+    color: white;
+    background-color: rgb(34, 66, 74);
+}
+
+.button button:hover {
+    color: #1680ac;
+    font-weight: 400;
+    background-color: cyan;
+    transform: scale(1.10);
+    transition: .3s;
+    filter: drop-shadow(10px 10px 10px rgba(255, 255, 255, 0.31));
+    color: #fff;
+    background: rgba(115, 113, 113, 0.661);
+}
+
+.goog-logo-link {
+    display: none !important;
+}
+
+.goog-te-gadget {
+    color: transparent !important;
+}
+
+.VIpgJd-ZVi9od-l4eHX-hSRGPd {
+    display: none;
+}
+
+.goog-te-gadget .goog-te-combo {
+    /* margin: 4px;
+    display: block;
+    position: fixed;
+    bottom: 30px;
+    left: 30px; */
+    z-index: 99999;
 }
