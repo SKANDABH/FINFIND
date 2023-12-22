@@ -1,7 +1,30 @@
 body {
     color: black;
-    background: url();
+    background: rgba(79, 47, 47, 0);
+    /* Black overlay with 50% opacity */
+    /* url('https://www.thegef.org/sites/default/files/styles/banner_image/public/2021-11/topics_banner_blendedfinance.jpg?h=4e9a1ef8&itok=vO7vV59p') no-repeat center / cover; */
+    height: 100vh;
+    background-position: center;
+    background-size: cover;
 }
+
+.connect_me {
+    position: relative;
+}
+
+.connect_me::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: url('path_to_your_image.jpg') center center no-repeat;
+    background-size: cover;
+    opacity: 0.7;
+    /* 70% opacity for the image */
+}
+
 
 .connect_me h1,
 h3 {
